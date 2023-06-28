@@ -258,8 +258,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvSunriseTime.text=unixTime(weatherList.sys.sunrise)
                 binding.tvSunsetTime.text=unixTime(weatherList.sys.sunset)
 
-                binding.tvMin.text=weatherList.main.temp_min.roundToInt().toString() + " min"
-                binding.tvMax.text=weatherList.main.temp_max.roundToInt().toString() + " max"
+                binding.tvMin.text=weatherList.main.temp_min.roundToInt().toString() + "° min"
+                binding.tvMax.text=weatherList.main.temp_max.roundToInt().toString() + "° max"
 
                 binding.tvSpeed.text=weatherList.wind.speed.toString()
                 binding.tvName.text=weatherList.name
